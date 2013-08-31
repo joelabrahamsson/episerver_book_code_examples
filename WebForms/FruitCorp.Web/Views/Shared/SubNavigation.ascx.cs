@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using EPiServer;
 using EPiServer.Core;
+using EPiServer.Filters;
 
 namespace FruitCorp.Web.Views.Shared
 {
@@ -35,8 +36,9 @@ namespace FruitCorp.Web.Views.Shared
         {
           return false;
         }
-        return Locate.ContentLoader()
-          .GetChildren<PageData>(rootLink).Any();
+        var children = Locate.ContentLoader()
+                             .GetChildren<PageData>(rootLink);
+        return FilterForVisitor.Filter(children).Any();
       }
     }
   }
