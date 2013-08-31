@@ -1,0 +1,20 @@
+﻿@using FruitCorp.Web.Helpers
+@{ Layout = null; }
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/custom.css" rel="stylesheet">
+    <title>_Root</title>
+    @Html.RenderEPiServerQuickNavigator()
+</head>
+<body>
+    
+    <div class="container">
+        @{ Html.RenderMainNavigation(); } 
+        @RenderBody()
+    </div>
+</body>
+</html>

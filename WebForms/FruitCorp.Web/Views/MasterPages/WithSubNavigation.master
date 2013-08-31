@@ -1,0 +1,16 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Views/MasterPages/Root.Master" AutoEventWireup="true" CodeBehind="WithSubNavigation.master.cs" Inherits="FruitCorp.Web.Views.MasterPages.WithSubNavigation" %>
+<%@ Register Src="~/Views/Shared/SubNavigation.ascx" TagPrefix="uc" TagName="SubNavigation" %>
+<%@ Register Src="~/Views/Shared/Breadcrumb.ascx" TagPrefix="uc" TagName="Breadcrumb" %>
+
+
+<asp:Content ContentPlaceHolderID="MainContent" runat="server">
+    <div class="row">
+        <div class="col-md-3">
+            <uc:SubNavigation runat="server" id="SubNavigation" />
+        </div>
+        <div class="col-md-6">
+            <uc:Breadcrumb runat="server" />
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</asp:Content>

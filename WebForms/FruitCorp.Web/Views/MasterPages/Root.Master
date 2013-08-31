@@ -1,0 +1,25 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Root.master.cs" Inherits="FruitCorp.Web.Views.MasterPages.Root" %>
+
+<%@ Register Src="~/Views/Shared/MainNavigation.ascx" TagPrefix="uc" TagName="MainNavigation" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/custom.css" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" class="container" runat="server">
+        <uc:MainNavigation runat="server" id="MainNavigation" />
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>
