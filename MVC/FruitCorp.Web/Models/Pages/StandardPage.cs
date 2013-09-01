@@ -4,7 +4,8 @@ using EPiServer.DataAnnotations;
 namespace FruitCorp.Web.Models.Pages
 {
   [ContentType(
-    GUID = "1cfe38ca-025e-4f66-a237-226c44f586e9")]
+    GUID = "1cfe38ca-025e-4f66-a237-226c44f586e9",
+    GroupName = "Editorial")]
   public class StandardPage : PageData
   {
     public virtual string MainIntro { get; set; }
