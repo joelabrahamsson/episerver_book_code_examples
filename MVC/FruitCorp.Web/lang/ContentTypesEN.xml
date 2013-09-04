@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="English" id="en">
+    <pagetypes>
+      <pagetype name="StartPage">
+        <name>Start page</name>
+        <description>
+          Used for the site's start page.
+        </description>
+      </pagetype>
+      <pagetype name="StandardPage">
+        <name>Standard page</name>
+        <description>
+          Used for standard editorial content pages.
+        </description>
+      </pagetype>
+      <groups>
+        <group name="Editorial">Editorial</group>
+        <group name="Specialized">Specialized</group>
+      </groups>
+    </pagetypes>
+  </language>
+</languages>

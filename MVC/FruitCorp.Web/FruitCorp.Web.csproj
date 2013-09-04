@@ -129,6 +129,9 @@
     <Content Include="Content\bootstrap\bootstrap.min.css" />
     <Content Include="Content\custom.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="lang\ContentTypesEN.xml">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="packages.config" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
