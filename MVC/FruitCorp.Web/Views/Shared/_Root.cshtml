@@ -1,13 +1,15 @@
 ﻿@using FruitCorp.Web.Helpers
+@model FruitCorp.Web.Models.Pages.BasePage
 @{ Layout = null; }
 
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="@Model.MetaDescription"/>
     <link href="~/Content/bootstrap/bootstrap.min.css" rel="stylesheet">
     <link href="~/Content/custom.css" rel="stylesheet">
-    <title>_Root</title>
+    <title>@Model.Title</title>
     @Html.RenderEPiServerQuickNavigator()
 </head>
 <body>
