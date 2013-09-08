@@ -7,6 +7,7 @@ namespace FruitCorp.Web.Models.Pages
     GroupName = "Specialized")]
   [ImageUrl("~/Content/Icons/Home.png")]
   [AvailablePageTypes(Include = new [] {typeof(StandardPage)})]
+  [Access(Roles = "CmsAdmins")]
   public class StartPage : BasePage
   {
   }
