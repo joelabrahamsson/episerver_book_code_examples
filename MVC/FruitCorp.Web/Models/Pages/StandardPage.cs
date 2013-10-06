@@ -1,4 +1,5 @@
-﻿using EPiServer.Core;
+﻿using System.Runtime.CompilerServices;
+using EPiServer.Core;
 using EPiServer.DataAnnotations;
 
 namespace FruitCorp.Web.Models.Pages
@@ -10,6 +11,44 @@ namespace FruitCorp.Web.Models.Pages
   [AvailablePageTypes(Include = new[] { typeof(StandardPage) })]
   public class StandardPage : BasePage
   {
+    public override string Title
+    {
+      get
+      {
+        var title = base.Title;
+
+        if (string.IsNullOrEmpty(title))
+        {
+          title = PageName;
+        }
+
+        return title;
+      }
+      set
+      {
+        base.Title = value;
+      }
+    }
+    
+    public override string MetaDescription
+    {
+      get
+      {
+        var metaDescription = base.MetaDescription;
+
+        if (string.IsNullOrEmpty(metaDescription))
+        {
+          metaDescription = MainIntro;
+        }
+
+        return metaDescription;
+      }
+      set
+      {
+        base.MetaDescription = value;
+      }
+    }
+
     public virtual string MainIntro { get; set; }
 
     public virtual XhtmlString MainBody { get; set; }
