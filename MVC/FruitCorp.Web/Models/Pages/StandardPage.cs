@@ -1,6 +1,6 @@
-﻿using System.Runtime.CompilerServices;
-using EPiServer.Core;
+﻿using EPiServer.Core;
 using EPiServer.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace FruitCorp.Web.Models.Pages
 {
@@ -11,6 +11,7 @@ namespace FruitCorp.Web.Models.Pages
   [AvailablePageTypes(Include = new[] { typeof(StandardPage) })]
   public class StandardPage : BasePage
   {
+    [Display(GroupName = "Meta data", Order = 10)]
     public override string Title
     {
       get
@@ -29,7 +30,8 @@ namespace FruitCorp.Web.Models.Pages
         base.Title = value;
       }
     }
-    
+
+    [Display(GroupName = "Meta data", Order = 20)]
     public override string MetaDescription
     {
       get
@@ -49,8 +51,10 @@ namespace FruitCorp.Web.Models.Pages
       }
     }
 
+    [Display(Order = 10)]
     public virtual string MainIntro { get; set; }
 
+    [Display(Order = 20)]
     public virtual XhtmlString MainBody { get; set; }
   }
 }
