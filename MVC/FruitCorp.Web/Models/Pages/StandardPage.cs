@@ -1,5 +1,6 @@
 ﻿using EPiServer.Core;
 using EPiServer.DataAnnotations;
+using EPiServer.Web;
 using System.ComponentModel.DataAnnotations;
 
 namespace FruitCorp.Web.Models.Pages
@@ -32,6 +33,7 @@ namespace FruitCorp.Web.Models.Pages
     }
 
     [Display(GroupName = "Meta data", Order = 20)]
+    [UIHint(UIHint.Textarea)]
     public override string MetaDescription
     {
       get
@@ -52,6 +54,7 @@ namespace FruitCorp.Web.Models.Pages
     }
 
     [Display(Order = 10)]
+    [UIHint(UIHint.Textarea)]
     public virtual string MainIntro { get; set; }
 
     [Display(Order = 20)]

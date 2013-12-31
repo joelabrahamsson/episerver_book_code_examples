@@ -1,4 +1,5 @@
 ﻿using EPiServer.Core;
+using EPiServer.Web;
 using System.ComponentModel.DataAnnotations;
 
 namespace FruitCorp.Web.Models.Pages
@@ -13,6 +14,7 @@ namespace FruitCorp.Web.Models.Pages
     }
 
     [Display(GroupName = "Meta data", Order = 20)]
+    [UIHint(UIHint.Textarea)]
     public virtual string MetaDescription
     {
       get { return this.GetPropertyValue(x => x.MetaDescription); }
