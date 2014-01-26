@@ -1,0 +1,38 @@
+﻿small {
+    EditMenuName: "Small"
+}
+
+.pull-left {
+    EditMenuName: "Float left"
+}
+
+.pull-right {
+    EditMenuName: "Float right"
+}
+
+h2 {
+    EditMenuTitle: Headings;
+    EditMenuName: "Heading 2"
+}
+
+h3 {
+    EditMenuName: "Heading 3"
+}
+
+p.text-muted {
+    EditMenuTitle: Text Emphasis;
+    EditMenuName: Muted;
+}
+
+p.text-info {
+    EditMenuName: Info;
+}
+
+p.text-warning {
+    EditMenuName: Warning;
+}
+
+img.thumbnail {
+    EditMenuTitle: Images;
+    EditMenuName: Thumbnail;
+}
