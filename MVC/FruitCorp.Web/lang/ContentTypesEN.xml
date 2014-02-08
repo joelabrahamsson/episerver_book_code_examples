@@ -40,5 +40,8 @@
         <group name="Specialized">Specialized</group>
       </groups>
     </pagetypes>
+    <validation>
+      <metadescription>A value for either {0} or {1} is required.</metadescription>
+    </validation>
   </language>
 </languages>
