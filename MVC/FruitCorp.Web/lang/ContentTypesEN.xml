@@ -41,7 +41,7 @@
       </groups>
     </pagetypes>
     <validation>
-      <metadescription>A value for either {0} or {1} is required.</metadescription>
+      <metadescription>A value for either Meta description or Preamble is required.</metadescription>
     </validation>
   </language>
 </languages>
