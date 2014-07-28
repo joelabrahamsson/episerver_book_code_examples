@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<languages>
+  <language name="English" id="en">
+    <editorstyleoptions>
+      <small>Small</small>
+      <float_left>Float left</float_left>
+      <float_right>Float right</float_right>
+      <headings>Headings</headings>
+      <heading_2>Heading 2</heading_2>
+      <heading_3>Heading 3</heading_3>
+      <text_emphasis>Text Emphasis</text_emphasis>
+      <muted>Muted</muted>
+      <info>Information</info>
+      <warning>Warning</warning>
+      <images>Images</images>
+      <thumbnail>Thumbnail</thumbnail>
+    </editorstyleoptions>
+  </language>
+</languages>

@@ -2,6 +2,7 @@
 <languages>
   <language name="English" id="en">
     <pagetypes>
+      <!-- Page types and properties specific to them -->
       <pagetype name="StartPage">
         <name>Start page</name>
         <description>
@@ -13,11 +14,34 @@
         <description>
           Used for standard editorial content pages.
         </description>
+        <property name="MainIntro">
+          <caption>Preamble</caption>
+          <help>Short, descriptive introduction text.</help>
+        </property>
+        <property name="MainBody">
+          <caption>Body text</caption>
+          <help>The page's main content.</help>
+        </property>
       </pagetype>
+      <!-- Common properties -->
+      <common>
+        <property name="Title">
+          <caption>Title</caption>
+          <help>The page's title in the browsers title bar. Also used by search engines.</help>
+        </property>
+        <property name="MetaDescription">
+          <caption>Meta description</caption>
+          <help>Short description of the page used by search engines.</help>
+        </property>
+      </common>
+      <!-- Groups -->
       <groups>
         <group name="Editorial">Editorial</group>
         <group name="Specialized">Specialized</group>
       </groups>
     </pagetypes>
+    <validation>
+      <metadescription>A value for either Meta description or Preamble is required.</metadescription>
+    </validation>
   </language>
 </languages>
