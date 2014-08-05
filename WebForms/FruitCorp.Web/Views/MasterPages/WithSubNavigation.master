@@ -10,6 +10,8 @@
         </div>
         <div class="col-md-6">
             <uc:Breadcrumb runat="server" />
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
         </div>
         <div class="col-md-3"></div>
     </div>
