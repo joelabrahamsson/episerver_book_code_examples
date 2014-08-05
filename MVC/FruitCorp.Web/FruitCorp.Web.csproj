@@ -106,6 +106,7 @@
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
+    <Compile Include="Helpers\FormattingExtensions.cs" />
     <Compile Include="Business\MetaDescriptionValidator.cs" />
     <Compile Include="Controllers\StandardPageController.cs" />
     <Compile Include="Controllers\StartController.cs" />
@@ -169,6 +170,7 @@
     <Content Include="Views\Shared\_WithSubNavigation.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Views\Shared\DisplayTemplates\LineBreaked.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

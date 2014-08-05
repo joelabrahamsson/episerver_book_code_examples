@@ -14,6 +14,10 @@
         <description>
           Used for standard editorial content pages.
         </description>
+        <property name="Image">
+          <caption>Image (485px wide)</caption>
+          <help>Add an (optional) image to the top of the page. The image should be 485 pixels wide.</help>
+        </property>
         <property name="MainIntro">
           <caption>Preamble</caption>
           <help>Short, descriptive introduction text.</help>

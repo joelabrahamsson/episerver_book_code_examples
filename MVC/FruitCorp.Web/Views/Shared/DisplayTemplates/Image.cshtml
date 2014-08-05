@@ -1,0 +1,10 @@
+﻿@model EPiServer.Url
+@if (Model != null && !Model.IsEmpty())
+{
+ var width = string.Empty;
+ if (ViewData.ContainsKey("width"))
+ {
+     width = "width=" + ViewData["width"];
+ }
+ <img src="@Model" @width/>
+}

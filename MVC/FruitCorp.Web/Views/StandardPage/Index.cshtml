@@ -1,5 +1,8 @@
 ﻿@model FruitCorp.Web.Models.Pages.StandardPage
 
+@Html.PropertyFor(x => x.Image, new { width = "100%" })
 <h1>@Html.PropertyFor(x => x.PageName)</h1>
-<p class="lead">@Html.PropertyFor(x => x.MainIntro)</p>
+<p class="lead">
+  @Html.PropertyFor(x => x.MainIntro, new { CustomTag = "span" })
+</p>
 @Html.PropertyFor(x => x.MainBody)
