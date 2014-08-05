@@ -171,6 +171,7 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Views\Shared\DisplayTemplates\LineBreaked.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\Image.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
