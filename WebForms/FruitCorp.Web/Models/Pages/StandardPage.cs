@@ -1,5 +1,7 @@
-﻿using EPiServer.Core;
+﻿using EPiServer;
+using EPiServer.Core;
 using EPiServer.DataAnnotations;
+using EPiServer.Framework.DataAnnotations;
 using EPiServer.Web;
 using System.ComponentModel.DataAnnotations;
 
@@ -53,8 +55,13 @@ namespace FruitCorp.Web.Models.Pages
       }
     }
 
+    [Display(Order = 5)]
+    [UIHint(UIHint.Image)]
+    public virtual Url Image { get; set; }
+
     [Display(Order = 10)]
-    [UIHint(UIHint.Textarea)]
+    [UIHint("LineBreaked")]
+    [UIHint(UIHint.Textarea, PresentationLayer.Edit)]
     public virtual string MainIntro { get; set; }
 
     [Display(Order = 20)]

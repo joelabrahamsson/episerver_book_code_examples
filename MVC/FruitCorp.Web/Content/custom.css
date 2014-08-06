@@ -19,3 +19,20 @@
     padding: 5px 25px;
     font-size: 90%;
 }
+
+div.link-list {
+    width: 35%; 
+    float: right; 
+    background: #F5FAFF; 
+    padding: 0 5px; 
+    margin-left: 5px; 
+    font-size: 12px;
+}
+
+div.link-list h4 {
+    margin-bottom: 2px;
+}
+
+div.link-list ul {
+    padding-left: 16px;
+}
