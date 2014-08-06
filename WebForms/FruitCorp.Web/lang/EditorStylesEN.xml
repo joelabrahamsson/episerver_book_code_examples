@@ -14,6 +14,8 @@
       <warning>Warning</warning>
       <images>Images</images>
       <thumbnail>Thumbnail</thumbnail>
+      <special>Special formatting</special>
+      <link_list>List of links</link_list>
     </editorstyleoptions>
   </language>
 </languages>

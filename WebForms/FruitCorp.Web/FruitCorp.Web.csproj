@@ -42,6 +42,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="CsQuery">
+      <HintPath>..\packages\CsQuery.1.3.4\lib\net40\CsQuery.dll</HintPath>
+    </Reference>
     <Reference Include="EPiServer, Culture=neutral, PublicKeyToken=8fe83dea738b45b7, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <Private>True</Private>
@@ -138,6 +141,20 @@
     <Compile Include="Views\Pages\Start.aspx.designer.cs">
       <DependentUpon>Start.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Properties\LineBreaked.ascx.cs">
+      <DependentUpon>LineBreaked.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Properties\LineBreaked.ascx.designer.cs">
+      <DependentUpon>LineBreaked.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Properties\CustomXhtmlString.ascx.cs">
+      <DependentUpon>CustomXhtmlString.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Properties\CustomXhtmlString.ascx.designer.cs">
+      <DependentUpon>CustomXhtmlString.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Shared\Breadcrumb.ascx.cs">
       <DependentUpon>Breadcrumb.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -179,6 +196,7 @@
     <Content Include="Global.asax" />
     <Content Include="lang\ContentTypesEN.xml" />
     <Content Include="lang\EditorStylesEN.xml" />
+    <Content Include="lang\ViewsEN.xml" />
     <Content Include="packages.config" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.ttf" />
@@ -190,6 +208,8 @@
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Views\Pages\Standard.aspx" />
     <Content Include="Views\Pages\Start.aspx" />
+    <Content Include="Views\Properties\LineBreaked.ascx" />
+    <Content Include="Views\Properties\CustomXhtmlString.ascx" />
     <Content Include="Views\Shared\Breadcrumb.ascx" />
     <Content Include="Views\Shared\MainNavigation.ascx" />
     <Content Include="Views\Shared\SubNavigation.ascx" />

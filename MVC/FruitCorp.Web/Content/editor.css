@@ -36,3 +36,8 @@ img.thumbnail {
     EditMenuTitle: Images;
     EditMenuName: Thumbnail;
 }
+
+ul.link-list {
+    EditMenuTitle: Special;
+    EditMenuName: Link list;
+}
